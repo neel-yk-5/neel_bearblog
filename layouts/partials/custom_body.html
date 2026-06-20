@@ -1,0 +1,17 @@
+<button id="theme-toggle" aria-label="Toggle dark/light mode"></button>
+<script>
+  function updateToggle() {
+    var btn = document.getElementById('theme-toggle');
+    btn.textContent = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+  }
+  function toggleTheme() {
+    var html = document.documentElement;
+    var isDark = html.classList.contains('dark');
+    html.classList.toggle('dark', !isDark);
+    html.classList.toggle('light', isDark);
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    updateToggle();
+  }
+  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+  updateToggle();
+</script>
