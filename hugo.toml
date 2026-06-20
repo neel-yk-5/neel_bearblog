@@ -1,0 +1,31 @@
+baseURL = "https://example.com"
+theme = 'hugo-bearblog'
+
+title = "Neel Khare"
+author = "Neel Khare"
+copyright = "Copyright © 2026, Neel Khare."
+languageCode = "en-US"
+
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[params]
+  description = "Writing about data engineering, Spark, and things I'm figuring out."
+  favicon = "images/favicon.png"
+  images = ["images/share.png"]
+  title = "Neel Khare"
+  dateFormat = "2006-01-02"
+  enablePostNavigator = true
+
+[markup]
+  [markup.highlight]
+    style = 'friendly'
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true
