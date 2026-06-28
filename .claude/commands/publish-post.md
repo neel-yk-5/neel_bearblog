@@ -24,7 +24,21 @@ Read the full file. Then derive the following — use your own judgement, do not
 - **slug**: Convert the title to kebab-case, all lowercase, no special characters (e.g. "Digital Minimalism - Day 1" → `digital-minimalism-day-1`)
 - **date**: Use today's date from `currentDate` in your context (format: `YYYY-MM-DD`)
 - **description**: Write one concise sentence that captures the core point of the post. This is for SEO and link previews — make it informative, not a teaser.
-- **tags**: Choose 2–4 short lowercase tags that accurately reflect the post's topics (e.g. `["habits", "attention", "personal"]`). Prefer specific over generic.
+- **tags**: Choose 2–4 tags from the **approved tag list below only**. Do not invent new tags. If no existing tag fits, flag it to the user and pick the closest match.
+
+  **Approved tags:**
+  | Tag | Use for |
+  |---|---|
+  | `personal` | general life reflections, personal updates |
+  | `journal` | diary-style, day-N series entries |
+  | `habits` | behavior change, routines, discipline |
+  | `attention` | focus, distraction, screen time, mindfulness |
+  | `declutter` | the digital declutter experiment series |
+  | `minimalism` | digital minimalism philosophy |
+  | `tech` | software, tools, the internet |
+  | `reading` | books, articles, learning from text |
+  | `work` | career, data engineering, job |
+  | `fitness` | health, exercise, body |
 - **word_count**: Count the words in the post body (exclude the `#` heading line if present)
 - **reading_time**: `ceil(word_count / 200)` — round up to nearest whole number, suffix with "min" (e.g. `3 min`)
 
